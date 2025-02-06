@@ -17,6 +17,7 @@ class ProductListViewController: UIViewController {
         super.viewDidLoad()
         setupCollectionView()
         setupToggleButton()
+        self.view.setScreenCaptureProtection()
     }
     
   

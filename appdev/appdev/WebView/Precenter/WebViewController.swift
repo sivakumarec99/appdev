@@ -26,7 +26,7 @@ class WebViewController: UIViewController {
         super.viewDidLoad()
         setupWebView()
         setupBindings()
-        viewModel.loadURL(urlString ?? "https://www.google.co.in/")
+        viewModel.loadURL(urlString ?? "https://stackoverflow.com/questions") // https://www.apple.com/in/
     }
     
     private func setupWebView() {
@@ -36,6 +36,11 @@ class WebViewController: UIViewController {
         webView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(webView)
         view.addSubview(activityIndicator)
+        
+        webView.isOpaque = false
+        webView.backgroundColor = .black
+        webView.scrollView.backgroundColor = .black
+
         
         NSLayoutConstraint.activate([
             webView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),

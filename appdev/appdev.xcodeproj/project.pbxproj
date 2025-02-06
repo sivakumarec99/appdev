@@ -19,6 +19,8 @@
 		01961BE32D421FF200E52E0F /* appdevUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01961BE22D421FF200E52E0F /* appdevUITests.swift */; };
 		01961BE52D421FF200E52E0F /* appdevUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01961BE42D421FF200E52E0F /* appdevUITestsLaunchTests.swift */; };
 		01961BF22D42201B00E52E0F /* LoadingIndigetor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01961BF12D42201B00E52E0F /* LoadingIndigetor.swift */; };
+		01A4054E2D54933400138B18 /* UIImage+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A4054B2D54933400138B18 /* UIImage+Extention.swift */; };
+		01A4054F2D54933400138B18 /* UIView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A4054C2D54933400138B18 /* UIView+Extention.swift */; };
 		01B3ECFA2D490BA3001FA70F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B3ECF92D490BA3001FA70F /* Launch Screen.storyboard */; };
 		01B3ECFC2D490BAE001FA70F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B3ECFB2D490BAE001FA70F /* Main.storyboard */; };
 		01B3ECFF2D490E13001FA70F /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B3ECFD2D490E13001FA70F /* CollectionViewCell.swift */; };
@@ -70,6 +72,8 @@
 		01961BE22D421FF200E52E0F /* appdevUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appdevUITests.swift; sourceTree = "<group>"; };
 		01961BE42D421FF200E52E0F /* appdevUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appdevUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		01961BF12D42201B00E52E0F /* LoadingIndigetor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndigetor.swift; sourceTree = "<group>"; };
+		01A4054B2D54933400138B18 /* UIImage+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extention.swift"; sourceTree = "<group>"; };
+		01A4054C2D54933400138B18 /* UIView+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extention.swift"; sourceTree = "<group>"; };
 		01B3ECF92D490BA3001FA70F /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		01B3ECFB2D490BAE001FA70F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		01B3ECFD2D490E13001FA70F /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -198,6 +202,7 @@
 		01961BBD2D421FEF00E52E0F /* appdev */ = {
 			isa = PBXGroup;
 			children = (
+				01A4054D2D54933400138B18 /* Extention */,
 				01CD0C422D51FCCF001B3122 /* MainTapBar */,
 				01CD0C362D51F882001B3122 /* ProductView */,
 				01CD0C312D51F82A001B3122 /* ProductList */,
@@ -230,6 +235,15 @@
 			);
 			path = appdevUITests;
 			sourceTree = "<group>";
+		};
+		01A4054D2D54933400138B18 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				01A4054B2D54933400138B18 /* UIImage+Extention.swift */,
+				01A4054C2D54933400138B18 /* UIView+Extention.swift */,
+			);
+			path = Extention;
+			sourceTree = SOURCE_ROOT;
 		};
 		01CD0C232D50A514001B3122 /* WebView */ = {
 			isa = PBXGroup;
@@ -488,6 +502,7 @@
 				01333CCB2D4B4F9E00D2A019 /* CameraData.swift in Sources */,
 				01CD0C392D51F8AF001B3122 /* ProductListViewController.swift in Sources */,
 				01CD0C452D51FDD0001B3122 /* CustomTabBarController.swift in Sources */,
+				01A4054E2D54933400138B18 /* UIImage+Extention.swift in Sources */,
 				01961BC32D421FEF00E52E0F /* ViewController.swift in Sources */,
 				01961BBF2D421FEF00E52E0F /* AppDelegate.swift in Sources */,
 				01CD0C282D50AB26001B3122 /* WebViewController.swift in Sources */,
@@ -501,6 +516,7 @@
 				01961BF22D42201B00E52E0F /* LoadingIndigetor.swift in Sources */,
 				01961BC92D421FEF00E52E0F /* appdev.xcdatamodeld in Sources */,
 				01CD0C712D52482D001B3122 /* ProductModel.swift in Sources */,
+				01A4054F2D54933400138B18 /* UIView+Extention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

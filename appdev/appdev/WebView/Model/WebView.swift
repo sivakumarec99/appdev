@@ -15,7 +15,7 @@ class WebViewViewModel: NSObject, ObservableObject {
     var webView: WKWebView
     
     // Define allowed domains (for security)
-    private let allowedDomains = ["example.com", "apple.com"]
+    private let allowedDomains = ["stackoverflow.com", "apple.com"]
     
     init(webView: WKWebView) {
         self.webView = webView

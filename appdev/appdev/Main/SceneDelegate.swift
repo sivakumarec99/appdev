@@ -45,6 +45,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneWillEnterForeground(_ scene: UIScene) {
         // Called as the scene transitions from the background to the foreground.
         // Use this method to undo the changes made on entering the background.
+        window?.viewWithTag(99)?.removeFromSuperview()
+
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
@@ -53,6 +55,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
 
         // Save changes in the application's managed object context when the application transitions to the background.
+        let blurEffect = UIBlurEffect(style: .light)
+        let blurView = UIVisualEffectView(effect: blurEffect)
+        blurView.frame = window?.frame ?? .zero
+        blurView.tag = 99 // Tag to identify later
+        window?.addSubview(blurView)
+        
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
 
