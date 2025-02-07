@@ -11,6 +11,7 @@ import UIKit
 extension UIView {
     
     func setScreenCaptureProtection() {
+        
         guard superview != nil else {
             for subview in subviews { //to avoid layer cyclic crash, when it is a topmost view, adding all its subviews in textfield's layer, TODO: Find a better logic.
                 subview.setScreenCaptureProtection()
@@ -28,10 +29,10 @@ extension UIView {
         guardTextField.layer.sublayers?.first?.addSublayer(layer)
         
         guardTextField.frame = CGRectMake(0, 0,self.frame.size.width, self.frame.size.height)
-        guardTextField.topAnchor.constraint(equalTo: self.topAnchor, constant: 0).isActive = true
-        guardTextField.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0).isActive = true
-        guardTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 0).isActive = true
-        guardTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 0).isActive = true
+//        guardTextField.topAnchor.constraint(equalTo: self.topAnchor, constant: 0).isActive = true
+//        guardTextField.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0).isActive = true
+//        guardTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 0).isActive = true
+//        guardTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 0).isActive = true
     }
 
   // OUTPUT 1
