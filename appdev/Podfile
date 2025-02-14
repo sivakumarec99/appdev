@@ -1,0 +1,21 @@
+platform :ios, '15.0'   # Ensure the platform is explicitly set
+use_modular_headers!    # Enable modular headers globally
+
+target 'appdev' do
+  use_frameworks!       # Use frameworks instead of static libraries
+
+  # Firebase dependencies
+  pod 'GoogleSignIn'
+	
+  # Core Firebase SDK
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+
+  # Required dependencies for FirebaseAuth
+  pod 'FirebaseAppCheckInterop'
+  pod 'FirebaseAuthInterop'
+  pod 'FirebaseCore'
+  pod 'FirebaseCoreExtension'
+  pod 'GTMSessionFetcher/Core'
+  pod 'RecaptchaInterop'
+end
